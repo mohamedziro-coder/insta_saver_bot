@@ -71,7 +71,7 @@ async def handle_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         dl_url = extract_download_url(url)
         if dl_url:
-            await msg.reply_video(dl_url, caption="✅ تفضّل الفيديو.\n@YourBotName")
+            await msg.reply_video(dl_url, caption="✅ تفضّل الفيديو.\n@mInstaSaverBot")
         else:
             await msg.reply_text("❌ ماقدرتش نستخرج الفيديو. تأكد أنه Public وجرب لينك آخر.")
     except Exception as e:
